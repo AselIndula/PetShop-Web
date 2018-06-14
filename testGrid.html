@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Shop</title>
+  <!--===============================================================================================-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!--===============================================================================================-->
+  <link href="css/shopslider.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrapCSS.css">
+
+<!-- jQuery library -->
+  <script src="js/bootstrap_jquery.js"></script>
+
+<!-- Latest compiled JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+
+body {
+   display: grid;
+   background-color: #7dc9e0;
+   grid-template-rows: 192px min-content min-content 1fr;
+   grid-template-columns: 1fr 20em;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  grid-row-start:auto;
+
+}
+.slider{
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  grid-column-start: 0;
+  grid-row-end: 4;
+}
+
+</style>
+</head>
+
+<body>
+  <div class="slider">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/slider1.jpg" alt="image1_shop">
+      <div class="carousel-caption">
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/slider2.jpg" alt="image2_shop">
+      <div class="carousel-caption">
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/slider3.jpg" alt="imae3_shop">
+      <div class="carousel-caption">
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  </div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+</body>
+</html>
