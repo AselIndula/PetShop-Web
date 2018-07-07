@@ -7,14 +7,134 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!--===============================================================================================-->
     <link href="css/slider.css" rel="stylesheet">
+    <link href="css/navBar.css" rel="stylesheet">
+
+    <link href="css/styleSheet.css" rel="stylesheet" >
+    <script type="text/javascript" src="js/javaS.js"></script>
     <!--===============================================================================================-->
   </head>
   <body>
-    <div id="slider">
-      <figure>
-        <img src="images/slider1.jpg" >
-        <img src="images/slider2.jpg" >
-        <img src="images/slider3.jpg" >
+        <div class="MainBody">
+
+        <div id="slider">
+          <figure>
+            <img a src="images/slider1.jpg" >
+            <img a src="images/slider2.jpg" >
+            <img a src="images/slider3.jpg" >
+        </div>
+
+        <ul class="navBar">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+
+
+    <div class="mainBody">
+        <div class="content" >
+            <div class="container">
+                <div id="Cart"><b>    My Cart</b>
+                    <table>
+                        <tr>
+                            <td width="155px">Items</td>
+                            <td id="Item">0</td>
+                        </tr>
+                        <tr>
+                            <td><b>Total</b></td>
+                            <td id="total"><b>Rs.0</b></td>
+                        </tr>
+                    </table>
+                    <a onclick="clearTable()">New Cart</a>
+                    <a onClick="dTable()" style="float: right">Display Cart</a>
+
+                </div>
+                <div>
+                    <div class="shpItem">
+                        <div>
+                            <h2 style="font-size:30px;margin-left: 10px;display: inline">Whole hearted Dog Food</h2>
+                            <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 75px">Rs.3700</h2></div>
+                        </div>
+                        <div class="shpItemPic" id="Picture1"></div>
+                        <div class="shopItemQ">
+                        <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p1" class="txtQuant" type="text" value="1"></form>
+                        </div>
+                        <div class="odrBtn" onclick="addItem(1)">ADD</div>
+                    </div>
+
+                    <div class="shpItem">
+                        <div>
+                            <h2 style="font-size:30px;margin-left: 8px;display: inline">Whole hearted Dog Food</h2>
+                            <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 1px">Rs.800</h2></div>
+                        </div>
+                        <div class="shpItemPic" id="Picture2"></div>
+                        <div class="shopItemQ">
+                            <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p2" class="txtQuant" type="text" value="1"></form>
+                        </div>
+                        <div class="odrBtn" onclick="addItem(2)">ADD</div>
+
+
+                    </div>
+
+                    <div class="shpItem">
+                        <div>
+                            <h2 style="font-size:30px;margin-left: 10px;display: inline">Whole hearted Dog Food</h2>
+                            <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 20px">Rs.550</h2></div>
+                        </div>
+                        <div class="shpItemPic" id="Picture3"></div>
+                        <div class="shopItemQ">
+                            <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p3" class="txtQuant" type="text" value="1"></form>
+                        </div>
+                        <div class="odrBtn" onclick="addItem(3)">ADD</div>
+
+                    </div>
+
+                    <div class="shpItem">
+                        <div>
+                            <h2 style="font-size:30px;margin-left: 10px;display: inline">Shirts</h2>
+                            <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 30px">Rs.1850</h2></div>
+                        </div>
+                        <div class="shpItemPic" id="Picture4"></div>
+                        <div class="shopItemQ">
+                            <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p4" class="txtQuant" type="text" value="1"></form>
+                        </div>
+                        <div class="odrBtn" onclick="addItem(4)">ADD</div>
+                    </div>
+
+                    <div class="shpItem">
+                        <div>
+                            <h2 style="font-size:30px;margin-left: 10px;display: inline"> Frocks</h2>
+                            <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 85px">Rs.2550</h2></div>
+                        </div>
+                        <div class="shpItemPic" id="Picture5"></div>
+                        <div class="shopItemQ">
+                            <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p5" class="txtQuant" type="text" value="1"></form>
+                        </div>
+                        <div class="odrBtn" onclick="addItem(5)">ADD</div>
+                    </div>
+
+
+                    <div class="shpItem">
+                        <div>
+                            <h2 style="font-size:30px;margin-left: 10px;display: inline">Slippers</h2>
+                            <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 80px">Rs.1200</h2></div>
+                        </div>
+                        <div class="shpItemPic" id="Picture6"></div>
+                        <div class="shopItemQ">
+                            <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p6" class="txtQuant" type="text" value="1"></form>
+                        </div>
+                        <div class="odrBtn" onclick="addItem(6)">ADD</div>
+                    </div>
+
+                    <div id="outBtn" onClick="dTable()">Checkout</div>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
 
       </figure>
     </div>
