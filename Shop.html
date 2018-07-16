@@ -1,143 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Shop</title>
-    <!--===============================================================================================-->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!--===============================================================================================-->
-    <link href="css/slider.css" rel="stylesheet">
-    <link href="css/navBar.css" rel="stylesheet">
-
-    <link href="css/styleSheet.css" rel="stylesheet" >
-    <script type="text/javascript" src="js/javaS.js"></script>
-    <!--===============================================================================================-->
-  </head>
-  <body>
-        <div class="MainBody">
-
-        <div id="slider">
-          <figure>
-            <img a src="images/slider1.jpg" >
-            <img a src="images/slider2.jpg" >
-            <img a src="images/slider3.jpg" >
-        </div>
-
-        <ul class="navBar">
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#about">About</a></li>
+<html>
+<head>
+  <title>Shop</title>
+  <!--===============================================================================================-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!--===============================================================================================-->
+  <link href="css/slider.css" rel="stylesheet">
+  <link href="css/NavigationStyle.css" rel="stylesheet">
+  <link href="css/styleSheet.css" rel="stylesheet" >
+  <script type="text/javascript" src="js/javaS.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/NavigationStyle.css">
+</head>
+<body>
+<header>
+    <!--Navigation Bar-->
+    <div class="logo">DOODIE'S PET SHOP</div>
+    <!--//Left Corner of Header-->
+    <nav class="active">
+        <ul>
+            <div class="dogImgGIf" id="dogGIF"></div>
+            <li><a href="Mainpage.html">HOME</a></li>
+            <li><a href="#" class="active">SHOP</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">QUIZ</a></li>
+            <li><a href="#">RATE</a></li>
+            <li><a href="FormwithRating.html">ABOUT</a></li>
         </ul>
+    </nav>
+    </div>
+</header>
+<!--===============image slider=================-->
+
+<div id="slider">
+  <figure>
+    <img a src="images/slider1.jpg" >
+    <img a src="images/slider2.jpg" >
+    <img a src="images/slider3.jpg" >
+    <img a src="images/slider4.jpg" >
+    <img a src="images/slider5.jpg" >
+  </figure>
+</div>
+
+<!--=================================container that have page layout==============-->
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+
+      <div class="content" >
+          <div class="container">
+
+              <div>
+                  <div class="shpItem">   <!--shop items added-->
+                      <div>
+                          <h2 style="font-size:30px;margin-left: 10px;display: inline">Whole hearted Dog Food</h2>
+                          <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 75px">Rs.3700</h2></div>
+                      </div>
+                      <hr>
+                      <div class="shpItemPic" id="Picture1"></div>
+                      <div class="shopItemQ">
+                      <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p1" class="txtQuant" type="text" value="1"></form>
+                      </div>
+                        <!-- button for add to cart -->
+                      <div class="odrBtn" onclick="addItem(1)">ADD</div>
+                  </div>
+
+                  <div class="shpItem">
+                      <div>
+                          <h2 style="font-size:30px;margin-left: 8px;display: inline">Dog Belt</h2>
+                          <h2 style="font-size:30px;margin-left: 8px;display: inline">Small</h2>
+                          <br><br><br>
+                          <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 75px">Rs.800</h2></div>
+                      </div>
+                      <hr>
+                      <div class="shpItemPic" id="Picture2"></div>
+                      <div class="shopItemQ">
+                          <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p2" class="txtQuant" type="text" value="1"></form>
+                      </div>
+                      <div class="odrBtn" onclick="addItem(2)">ADD</div>
+                  </div>
+
+                  <div class="shpItem">
+                      <div>
+                          <h2 style="font-size:30px;margin-left: 10px;display: inline">Whole hearted Dog Food</h2>
+                          <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 75px">Rs.550</h2></div>
+                      </div>
+                      <hr>
+                      <div class="shpItemPic" id="Picture3"></div>
+                      <div class="shopItemQ">
+                          <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p3" class="txtQuant" type="text" value="1"></form>
+                      </div>
+                      <div class="odrBtn" onclick="addItem(3)">ADD</div>
+
+                  </div>
+                  <div class="shpItem">
+                      <div>
+                          <h2 style="font-size:30px;margin-left: 10px;display: inline">Whole hearted Dog Food</h2>
+                          <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 75px">Rs.1850</h2></div>
+                      </div>
+                      <hr>
+                      <div class="shpItemPic" id="Picture4"></div>
+                      <div class="shopItemQ">
+                          <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p4" class="txtQuant" type="text" value="1"></form>
+                      </div>
+                      <div class="odrBtn" onclick="addItem(4)">ADD</div>
+                  </div>
+
+                  <div class="shpItem">
+                      <div>
+                          <h2 style="font-size:30px;margin-left: 10px;display: inline">Whole hearted Dog Food</h2>
+                          <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 75px">Rs.2550</h2></div>
+                      </div>
+                      <div class="shpItemPic" id="Picture5"></div>
+                      <div class="shopItemQ">
+                          <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p5" class="txtQuant" type="text" value="1"></form>
+                      </div>
+                      <div class="odrBtn" onclick="addItem(5)">ADD</div>
+                  </div>
 
 
-    <div class="mainBody">
-        <div class="content" >
-            <div class="container">
-                <div id="Cart"><b>    My Cart</b>
-                    <table>
-                        <tr>
-                            <td width="155px">Items</td>
-                            <td id="Item">0</td>
-                        </tr>
-                        <tr>
-                            <td><b>Total</b></td>
-                            <td id="total"><b>Rs.0</b></td>
-                        </tr>
-                    </table>
-                    <a onclick="clearTable()">New Cart</a>
-                    <a onClick="dTable()" style="float: right">Display Cart</a>
+                  <div class="shpItem">
+                      <div>
+                          <h2 style="font-size:30px;margin-left: 10px;display: inline">Whole hearted Dog Food</h2>
+                          <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 75px">Rs.1200</h2></div>
+                      </div>
+                      <div class="shpItemPic" id="Picture6"></div>
+                      <div class="shopItemQ">
+                          <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p6" class="txtQuant" type="text" value="1"></form>
+                      </div>
+                      <div class="odrBtn" onclick="addItem(6)">ADD</div>
+                  </div>
 
-                </div>
-                <div>
-                    <div class="shpItem">
-                        <div>
-                            <h2 style="font-size:30px;margin-left: 10px;display: inline">Whole hearted Dog Food</h2>
-                            <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 75px">Rs.3700</h2></div>
-                        </div>
-                        <div class="shpItemPic" id="Picture1"></div>
-                        <div class="shopItemQ">
-                        <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p1" class="txtQuant" type="text" value="1"></form>
-                        </div>
-                        <div class="odrBtn" onclick="addItem(1)">ADD</div>
-                    </div>
+                  <div class="shpItem">
+                      <div>
+                          <h2 style="font-size:30px;margin-left: 10px;display: inline">Whole hearted Dog Food</h2>
+                          <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 75px">Rs.1200</h2></div>
+                      </div>
+                      <div class="shpItemPic" id="Picture7"></div>
+                      <div class="shopItemQ">
+                          <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p7" class="txtQuant" type="text" value="1"></form>
+                      </div>
+                      <div class="odrBtn" onclick="addItem(7)">ADD</div>
+                  </div>
 
-                    <div class="shpItem">
-                        <div>
-                            <h2 style="font-size:30px;margin-left: 8px;display: inline">Whole hearted Dog Food</h2>
-                            <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 1px">Rs.800</h2></div>
-                        </div>
-                        <div class="shpItemPic" id="Picture2"></div>
-                        <div class="shopItemQ">
-                            <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p2" class="txtQuant" type="text" value="1"></form>
-                        </div>
-                        <div class="odrBtn" onclick="addItem(2)">ADD</div>
+                  <div class="shpItem">
+                      <div>
+                          <h2 style="font-size:30px;margin-left: 10px;display: inline">Dog Comb</h2>
+                          <br><br><br><br><br>
+                          <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 75px">Rs.1200</h2></div>
+                      </div>
+                      <div class="shpItemPic" id="Picture8"></div>
+                      <div class="shopItemQ">
+                          <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p8" class="txtQuant" type="text" value="1"></form>
+                      </div>
+                      <div class="odrBtn" onclick="addItem(8)">ADD</div>
+                  </div>
+              </div>
 
 
-                    </div>
+          </div>
+      </div>
 
-                    <div class="shpItem">
-                        <div>
-                            <h2 style="font-size:30px;margin-left: 10px;display: inline">Whole hearted Dog Food</h2>
-                            <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 20px">Rs.550</h2></div>
-                        </div>
-                        <div class="shpItemPic" id="Picture3"></div>
-                        <div class="shopItemQ">
-                            <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p3" class="txtQuant" type="text" value="1"></form>
-                        </div>
-                        <div class="odrBtn" onclick="addItem(3)">ADD</div>
-
-                    </div>
-
-                    <div class="shpItem">
-                        <div>
-                            <h2 style="font-size:30px;margin-left: 10px;display: inline">Shirts</h2>
-                            <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 30px">Rs.1850</h2></div>
-                        </div>
-                        <div class="shpItemPic" id="Picture4"></div>
-                        <div class="shopItemQ">
-                            <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p4" class="txtQuant" type="text" value="1"></form>
-                        </div>
-                        <div class="odrBtn" onclick="addItem(4)">ADD</div>
-                    </div>
-
-                    <div class="shpItem">
-                        <div>
-                            <h2 style="font-size:30px;margin-left: 10px;display: inline"> Frocks</h2>
-                            <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 85px">Rs.2550</h2></div>
-                        </div>
-                        <div class="shpItemPic" id="Picture5"></div>
-                        <div class="shopItemQ">
-                            <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p5" class="txtQuant" type="text" value="1"></form>
-                        </div>
-                        <div class="odrBtn" onclick="addItem(5)">ADD</div>
-                    </div>
+    </figure>
+  </div>
 
 
-                    <div class="shpItem">
-                        <div>
-                            <h2 style="font-size:30px;margin-left: 10px;display: inline">Slippers</h2>
-                            <div style="display: inline-block "><h2 style="font-size: 20px;margin-left: 80px">Rs.1200</h2></div>
-                        </div>
-                        <div class="shpItemPic" id="Picture6"></div>
-                        <div class="shopItemQ">
-                            <p style="display: inline; margin-left:10px">Quantity:</p><form><input id="p6" class="txtQuant" type="text" value="1"></form>
-                        </div>
-                        <div class="odrBtn" onclick="addItem(6)">ADD</div>
-                    </div>
+  </div>
+  <!-- Right Coloumn -->
 
-                    <div id="outBtn" onClick="dTable()">Checkout</div>
+  <div class="rightcolumn">
 
+    <div class="card">
+      <!-- Cart in the shop -->
+      <br>
+        <table>
+            <tr>
+                <td width="155px">Items</td>
+                <td id="Item">0</td>
+            </tr>
+            <br>
+            <tr>
+                <td><b>Total</b></td>
+                <td id="total"><b>Rs.0</b></td>
+            </tr>
+        </table>
+        <br><br>
+        <!-- Buttons for Display cart and Clear cart -->
+        <button class="buttonClear" onclick="clearTable()"> New Cart</button>
+        <button class="buttonDisp" onClick="dTable()"> Display Cart</button>
 
-
-                </div>
-
-
-            </div>
-        </div>
-
-      </figure>
+    </div>
+    <div class="card">
+      <div class="saleImg" id="saleimg"></div>
     </div>
 
-  </body>
+    <div class="card">
+      <div class="delImg" id="delimg"></div>
+    </div>
+
+    <div class="card">
+      <button class="buttonFont" onclick="upFont()"> Font Increase</button>
+      <button class="buttonFont" onclick="dFont()"> Font Decrease</button>
+    </div>
+
+    <div class="cardLast">
+      <h2 text-size: 12px;>Doodie</h2>
+      <img src="images/doggeI.jpg">
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  <div class="sitemap">
+        <table >
+            <tr>
+      <th  style="padding: 20px;" ><a style="color: white;"href="home.html">HOME</a></th>
+      <th  style="padding: 20px;"><a style="color: white;" href="gallerypage.html">SHOP</a></th>
+      <th style="padding: 20px;"><a style="color: white; "href="comments.html">GALLERY</a></th>
+      <th style="padding: 20px;"><a style="color: white; "href="products.html">QUIZ</a></th>
+      <th style="padding: 20px;"><a style="color: white; "href="quiz.html">RATE</a></th>
+       <th style="padding: 20px;"><a style="color:white;"href="aboutUs.html">ABOUT</a></th>
+      </tr>
+        </table>
+        <p class="footext" > <a style="color: white;" href="cv/asel.html">Asel Siriwardena</a></p>
+        <br>
+        <hr>
+
+        </div>
+      </div>
+
+</body>
 </html>

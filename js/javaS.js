@@ -91,6 +91,21 @@ function addItem(num){
                 alert(Quantity + " Whole hearted Dog Food  Added to the cart");
 
                 break;
+            case 7:
+                Iprice = 1200;
+                itemName.push("Whole hearted Dog Food");
+                itemQuantity.push(Quantity);
+                alert(Quantity + " Whole hearted Dog Food  Added to the cart");
+
+              break;
+
+            case 8:
+                Iprice = 1200;
+                itemName.push("Whole hearted Dog Food");
+                itemQuantity.push(Quantity);
+                alert(Quantity + " Whole hearted Dog Food  Added to the cart");
+
+                break;
         }
 //calculate Total
 
@@ -111,12 +126,13 @@ function tCreate(){
     Tbl="<html>\n";
     Tbl+="<head>\n";
     Tbl+="<title>YOUR CART</title>\n";
-    Tbl+='<link rel="stylesheet" href="css/style2.css">';
+    Tbl+='<link rel="stylesheet" href="css/styleSheet.css">';
     Tbl+="</head>\n";
     Tbl+="<body>\n"
     Tbl+='<div class="picture picCart"  style="padding: 100px 0">\n';
-    Tbl+="<h1>YOUR CART</h1>";
     Tbl+="</div>";
+    Tbl+="<br>";
+
     Tbl+="<div class='mainBody'>";
     Tbl+="<table border='1'>\n";
     Tbl+="<h3>Dear, "+name+" your cart is displayed </h3>\n";
@@ -159,8 +175,8 @@ function clearTable(){
     itemName=[];
     itemQuantity=[];
     Quantity=0;
-    document.getElementById("Total").innerHTML="<b>Rs."+Total+"</b>";
-    document.getElementById("Item").innerHTML=Icount;
+    document.getElementById("total").innerHTML = "<b>Rs." + Total + "</b>";
+    document.getElementById("Item").innerHTML = Icount.toString();
 
 }
 
@@ -177,95 +193,6 @@ function dTable(){
         }
     }else{
         alert(' Your cart is empty !!')
-    }
-
-
-}
-
-
-
-
-// Used to toggle the menu on small screens when clicking the more button
-
-
-
-//arrays containg the path of the images to be used
-var image1Arr=["images/galle1.jpg","images/galle2.jpg","images/galle3.jpg","images/galle4.jpg","images/galle5.jpg"];
-var image2Arr=["images/eden1.jpg","images/eden2.jpg","images/eden3.jpg","images/eden4.jpg","images/eden5.jpg"];
-var image3Arr=["images/suriya1.jpg","images/suriya2.jpg","images/suriya3.jpg","images/suriya4.jpg","images/suriya5.jpg"];
-var image4Arr=["images/ta1.jpg","images/ta2.jpg","images/ta3.jpg","images/ta4.jpg","images/ta5.jpg"];
-var image5Arr=["images/taj1.jpg","images/taj2.jpg","images/taj3.jpg","images/taj4.jpg","images/taj5.jpg"];
-
-
-
-
-//function passing values update_form function to change the images and the description that is being displayed
-function add_image(product) {
-    var x,y,z;
-
-
-    switch(product) {
-
-        case product1:
-
-            x="images/galle1.jpg";
-            y ="product_description1";
-            z =image1Arr;
-            update_form(x,y,z);
-            break;
-
-        case product2:
-
-            x="images/eden1.jpg";
-            y ="product_description2";
-            z =image2Arr;
-            update_form(x,y,z);
-            break;
-
-
-        case product3:
-
-            x="images/suriya1.jpg";
-            y ="product_description3";
-            z =image3Arr;
-            update_form(x,y,z);
-
-            break;
-        case product4:
-
-            x="images/ta1.jpg";
-            y ="product_description4";
-            z =image4Arr;
-            update_form(x,y,z);
-
-
-            break;
-        case product5:
-
-            x="images/taj1.jpg";
-            y ="product_description5";
-            z =image5Arr;
-            update_form(x,y,z);
-
-            break;
-        default:
-
-    }
-
-
-    //function which updates the images and the description displayedin the form
-    function update_form(x,y,z){
-
-        document.getElementById("newimage").src =x;
-        document.getElementById("newimage").style.width="500px";
-
-        document.getElementById("decription_form").style.display = "block";
-        document.getElementById("leftColumn").style.display = "block";
-        document.getElementById("rightColumn").style.display = "block";
-        document.getElementById("product_description").innerHTML= document.getElementById(y).innerHTML;
-        sub_imgreplace(z);
-        window.location = '#newimage';
-
     }
 
 

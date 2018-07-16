@@ -58,9 +58,9 @@ function addItem(num){
                 break;
             case 2:
                 Iprice = 800;
-                itemName.push("Whole hearted Dog Food");
+                itemName.push("Dog Belt Small");
                 itemQuantity.push(Quantity);
-                alert(Quantity + " Whole hearted Dog Food Added to the cart");
+                alert(Quantity + " Dog Belt Small Added to the cart");
 
                 break;
             case 3:
@@ -86,9 +86,9 @@ function addItem(num){
                 break;
             case 6:
                 Iprice = 1200;
-                itemName.push("Whole hearted Dog Food");
+                itemName.push(" Dog Comb");
                 itemQuantity.push(Quantity);
-                alert(Quantity + " Whole hearted Dog Food  Added to the cart");
+                alert(Quantity + "Dog Comb  Added to the cart");
 
                 break;
         }
@@ -120,6 +120,7 @@ function tCreate(){
     Tbl+="<div class='mainBody'>";
     Tbl+="<table border='1'>\n";
     Tbl+="<h3>Dear, "+name+" your cart is displayed </h3>\n";
+    Tbl+="<br><br>";
     Tbl+="<tr><td width='200px'>Item</td>\n";
     Tbl+="<td width='90px'>Quantity</td>\n";
     Tbl+="<td width='90px'>Price</td></tr>\n";

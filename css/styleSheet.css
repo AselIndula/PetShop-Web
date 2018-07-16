@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 
 body, div,h1, h2, h3, h4, h5, h6{
     margin: 0;
@@ -7,8 +10,93 @@ body, div,h1, h2, h3, h4, h5, h6{
     font: inherit;
 }
 
-footer{
+body {
+    color: #505050;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 10px;
+    background: #f1f1f1;
+}
+.a{
+  float:right;
+  display: inline-block;
+
+}
+
+
+.sitemap{
+	float: center;
+	margin-bottom: 0px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-right: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.cardLast {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: rgba(0, 0, 0, .7);
     display: block;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+/*
+Fade in effect
+*/
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 body {
@@ -20,21 +108,19 @@ ol, ul {
 }
 
 
-
-
 table {
     border-collapse: collapse;
-    border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    border-spacing: 30;
+
 }
 
-
-body {
-    background-color: #1e1e1e;
-    color: #505050;
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.5;
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
 @font-face {
@@ -42,30 +128,6 @@ body {
     src: url("../font/HelveticaNeue.ttf") format("truetype");
 }
 
-.MainBody {
-    width: 100%;
-    margin: 0 auto;
-    animation: fadein 2s linear forwards;
-}
-
-/*
-Fade in effect
-*/
-@keyframes fadein {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-.navigationBarItem:active > .MainBody {
-    animation: fadeout 2s linear forwards;
-
-}
-
-
-
-.mainBody {
-    display: block;
-    background-color: #fff;
-}
 
 .container {
     width: 100%;
@@ -76,15 +138,10 @@ Fade in effect
 
 }
 
-p {
-    margin-bottom: 38px;
-    font-size: 18px;
-    font-weight: 200;
-}
-
 .content {
     padding: 38px 0;
 }
+
 .picture {
     padding: 235px 0;
     background-position: 0 0;
@@ -97,28 +154,6 @@ h1 {
     font-size: 75px;
     text-shadow: 0 0 10px white;
 }
-.pic01 {
-    background-image: url("../img/mainImg/imgMain.jpg");
-}
-.pic02 {
-    background-image: url("../img/mainImg/img02.jpg");
-}
-.pic03 {
-    background-image: url("../img/mainImg/img03.jpg");
-}
-
-.pic04 {
-    background-image: url("../img/mainImg/img04.jpg");
-}
-
-.shopPic{
-    background-image: url("../img/mainImg/shopPic.png");
-}
-
-.picCart{
-    background-image: url("../img/mainImg/sc.png");
-}
-
 
 /*changing the font with the displaying size*/
 @media all and (min-width: 300px) {
@@ -157,62 +192,17 @@ h1 {
     }
 }
 
-
-/*changing nav bar to the display size*/
-@media (max-width:520px){
-    .hideBar {
-        display:none!important
-    }
-
-}
-@media (min-width:521px){
-    #showMore{
-        display: none;
-    }
-
-    .hideBarL {
-        display:none
-    }
-
-}
-.navigationTop{
-    position:fixed;
-    width:100%;
-    z-index:1;
-    top:0
-}
-
-
-.navigationAnimate {
-    position:relative;
-    -webkit-animation:navAnimate 0.4s;
-    animation:navAnimate 0.4s
-}
-@keyframes navAnimate {
-    from{
-        top:-300px;
-        opacity:0
-    } to{
-          top:0;
-          opacity:1
-      }
-}
-
-
 .colourWhite,.whiteHover:hover{
     color:#000;
     background-color:#fff
 }
 
-
-
-
 /*
 CSS for shop adding shadows(3-D look) and interactivity
 */
 .shpItem{
-    width: 300px;
-    height: 550px;
+    width: 200px;
+    height: 350px;
     border:1px solid darkgreen;
     box-shadow: 0 0 13px #455444;
     display: inline-block;
@@ -224,45 +214,6 @@ CSS for shop adding shadows(3-D look) and interactivity
 .shpItem:hover {
     box-shadow: 0 0 50px #333333;
 }
-
-.shpItemPic{
-    width: 298px;
-    height: 340px;
-    box-shadow: 1 05 10px #467994;
-    display: inline-block;
-    background-size: cover;
-    transition: all 0.4s ease;
-
-}
-
-/* pictures for shop items*/
-
-#Picture1{
-    background-image: url("../img/Shp1.jpg");
-}
-
-#Picture2{
-    background-image: url("../img/Shp2.jpg");
-}
-
-#Picture3{
-    background-image: url("../img/Shp3.jpg");
-}
-
-#Picture4{
-    background-image: url("../img/Shp4.jpg");
-}
-
-#Picture5{
-    background-image: url("../img/Shp5.jpg");
-}
-
-#Picture6{
-    background-image: url("../img/Shp6.jpg");
-}
-
-
-
 
 .shopItemQ{
     display: inline-block;
@@ -289,61 +240,6 @@ CSS for shop adding shadows(3-D look) and interactivity
     font-weight: 200;
 }
 
-
-/*Group information page*/
-
-#gPic1{
-    background-image: url("../cv/cvPics/a.jpg");
-}
-
-#gPic2{
-    background-image: url("../cv/cvPics/a.jpg");
-}
-
-#gPic3{
-    background-image: url("../cv/cvPics/h.jpg");
-}
-
-
-
-
-
-
-
-.iitNo{
-    display:none ;
-    transition: all 0.3s ease;
-}
-.grupPic{
-    width: 300px;
-    height: 390px;
-    border:1px solid darkgreen;
-    box-shadow: 0 0 10px #444444;
-    display: inline-block;
-    margin: 10px;
-    margin-top: 50px;
-    transition: all 0.3s ease;
-
-}
-
-.grupPic:hover{
-    height: 425px;
-}
-
-.grupPic:hover > .iitNo {
-    display: block;
-}
-
-
-
-
-
-.grupPic:hover {
-    box-shadow: 0 0 50px #333333;
-}
-
-
-
 .odrBtn:hover{
     box-shadow: 0 0 20px #444444;
 
@@ -352,35 +248,6 @@ CSS for shop adding shadows(3-D look) and interactivity
 .odrBtn:active{
     box-shadow: 0 0 200px #444444;
 
-}
-
-#Cart{
-    padding: 5px;
-    float: right;
-    width: 200px;
-    height: 100px;
-    margin-left: 600px;
-    border-radius: 10px;
-    border: 2px solid #1e1e1e;
-    box-shadow: 0 0 10px #444444;
-
-
-}
-
-#outBtn{
-    width: 120px;
-    height: 50px;
-    padding: 10px;
-    margin-top: 20px;
-    margin-left: 40%;
-    box-shadow: 0 0 3px #444444;
-    background-color: darkgreen;
-    display: inline-block;
-    text-align: center;
-    text-shadow: 0 0 10px white;
-    color: #dddddd;
-    font-weight: 200;
-    font-size: 20px;
 }
 
 #outBtn:hover{
@@ -393,80 +260,166 @@ CSS for shop adding shadows(3-D look) and interactivity
 
 }
 
-
-
-
-/*---------------------
-  footer
------------------------- */
-footer {
-    padding: 20px 0;
-}
-footer .asides {
-    margin-bottom: 20px;
-}
-footer aside {
-    margin-bottom: 10px;
-}
-footer nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-footer nav li {
+.shpItemPic{
+    width: 100px;
+    height: 120px;
+    box-shadow: 1 05 10px #467994;
     display: inline-block;
-}
-footer nav a {
-    display: block;
-    margin: 0 5px;
-    color: #fff;
-}
-footer .logo {
-    text-align: center;
-}
-footer .logo img {
-    display: inline-block;
-    vertical-align: middle;
-}
-footer .copyright {
-    text-align: center;
-}
-footer .copyright small {
-    color: #fff;
-    font-size: 12px;
-}
-footer .copyright a {
-    color: #fff;
-}
+    background-size: cover;
+    transition: all 0.4s ease;
 
-@media all and (min-width: 600px) {
-    footer aside {
-        margin-bottom: 0;
-        float: left;
-        width: 33.3333%;
-    }
-    footer nav ul {
-        text-align: left;
-    }
-    footer nav li {
-        display: block;
-    }
-    footer nav a {
-        display: inline-block;
-        margin: 0;
-    }
-    footer .logo {
-        text-align: right;
-    }
 }
+.saleImg{
+  width: 250px;
+  height: 142px;
+  display: inline-block;
+  background-size: cover;
+  transition: all 0.4s ease;
+  margin-left: 40px;
 
 
-a {
-    text-decoration: none;
-    color: #1e1e1e;
+}
+.delImg{
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+  background-size: cover;
+  transition: all 0.4s ease;
 }
 
-a:hover {
-    color: gray;
+.dogImgGIf{
+  width: 200px;
+  height: 35px;
+  float: right;
+  display: inline-block;
+  background-size: cover;
+  transition: all 0.4s ease;
+}
+
+.fontSizeChange{
+  width: 80px;
+  height: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  float:inherit;
+  display: inline-block;
+  background-size: cover;
+  transition: all 0.4s ease;
+  border-radius: 100%;
+}
+
+/*pictures in page*/
+.picCart{
+    background-image: url("../images/dogThank.gif");
+    width: 267px;
+    height: 238px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#plusicon{
+  background-image: url("../images/plus.png");
+}
+#minusicon{
+  background-image: url("../images/minus.png");
+}
+
+
+#dogGIF{
+  background-image: url("../images/dog.gif");
+}
+
+#saleimg{
+    background-image: url("../images/sale.png");
+}
+
+#delimg{
+  background-image: url("../images/freeDel.png");
+}
+
+/* pictures for shop items*/
+
+#Picture1{
+    background-image: url("../images/item/item1.jpg");
+}
+
+#Picture2{
+    background-image: url("../images/item/item2.jpg");
+}
+
+#Picture3{
+    background-image: url("../images/item/item3.jpg");
+}
+
+#Picture4{
+    background-image: url("../images/item/item4.jpg");
+}
+
+#Picture5{
+    background-image: url("../images/item/item5.jpg");
+}
+
+#Picture6{
+    background-image: url("../images/item/item6.jpg");
+}
+
+#Picture7{
+    background-image: url("../images/item/item7.jpg");
+}
+
+#Picture8{
+    background-image: url("../images/item/item8.jpg");
+}
+
+/*clear cart and show cart buttons*/
+.buttonClear{
+  background-color: #2196f3;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 14px;
+}
+.buttonDisp{
+  background-color: #2196f3;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.buttonClear:hover, .buttonDisp:hover, .buttonFont:hover {opacity: 1}
+
+.buttonFont{
+  background-color: #2196f3;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footext {
+	float:none;
+	margin-right:auto;
+	margin-left:auto;
+	text-align:center;
+	font-size: 20px;
 }
