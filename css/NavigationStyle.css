@@ -13,8 +13,7 @@ header { /*Common to Both right & left sides of the header*/
     width: 100%;
     box-sizing: border-box;
     height: 50px;
-    position: sticky;
-
+position : sticky;
 }
 
 header .logo /*left side of the header*/
@@ -104,3 +103,27 @@ header nav ul li a:nth-child(2) {
 
 
 }
+/*dog gif on navigation */
+#dogGIF{
+    background-image: url("../images/dog.gif");
+}
+
+.dogImgGIf{
+    width: 200px;
+    height: 35px;
+    float: right;
+    display: inline-block;
+    background-size: cover;
+    transition: all 0.4s ease;
+}
+
+.footer {
+    text-align: center;
+    background: rgba(0, 0, 0, .7);
+    display: block;
+}
+.sitemap{
+    float: center;
+    margin-bottom: 0px;
+}
+

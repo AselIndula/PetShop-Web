@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="css/NavigationStyle.css">
+  <link href="css/quizstyles.css" rel="stylesheet">
+
+</head>
+<body background="...images/images.jpg">
+ <header>
+    <!--Navigation Bar-->
+    <div class="logo">DOODIE'S PET SHOP</div>
+    <!--//Left Corner of Header-->
+    <nav class="active">
+        <ul>
+           <li><a href="Mainpage.html">HOME</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#" class="active">QUIZ</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="FormwithRating.html">RATE </a></li>
+            <li><a href="#" >ABOUT </a></li>
+
+        </ul>
+    </nav>
+    </div>
+</header>
+
+<br><br><br><br><br><br>
+  <div style="font-size:14pt;color:black; float:right; margin-right:150px" id="hideMsg">
+  You have <span>60</span> Seconds left.
+  </div>
+  <br><br>
+
+  <div id="quiz">
+
+    <div class="question">
+        <h3><span class="label label-warning" id="qid">1</span>
+            <span id="question" style="color:white"></span>
+        </h3>
+    </div>
+    <ul>
+        <li>
+            <input type="radio" id="f-option" name="q_options" value="1">
+            <label for="f-option" class="element-animation"></label>
+            <div class="check"></div>
+        </li>
+
+        <li>
+            <input type="radio" id="s-option" name="q_options" value="2">
+            <label for="s-option" class="element-animation"></label>
+            <div class="check"><div class="inside"></div></div>
+        </li>
+
+        <li>
+            <input type="radio" id="t-option" name="q_options" value="3">
+            <label for="t-option" class="element-animation"></label>
+            <div class="check"><div class="inside"></div></div>
+        </li>
+      </ul>
+  </div>
+
+  <div class="text-muted">
+      <span id="answer"></span>
+  </div>
+  <div id="result-of-question" class="pulse animated" style="display: none;">
+    <br/><br/><br/>
+      <span id="totalCorrect" class="pull-right"></span>
+          <table class="table table-hover table-responsive" >
+              <thead>
+                  <tr>
+                      <th>Question No.</th>
+                      <th>Correct answer</th>
+                      <th>Your answer</th>
+                      <th>Result</th>
+                  </tr>
+              </thead>
+            <tbody id="quizResult"></tbody>
+          </table>
+  <br/><br/><br/>
+  </div>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/quizScript.js"></script>
+<footer>
+<div class="sitemap">
+            <hr>
+        <table >
+            <tr>
+      <th  style="padding: 20px;" ><a style="color: white;"href="home.html">Home</a></th>
+      <th  style="padding: 20px;"><a style="color: white;" href="gallerypage.html">Gallery</a></th>
+      <th style="padding: 20px;"><a style="color: white; "href="comments.html">Comments</a></th>
+      <th style="padding: 20px;"><a style="color: white; "href="products.html">Products</a></th>
+      <th style="padding: 20px;"><a style="color: white; "href="quiz.html">Quiz</a></th>
+       <th style="padding: 20px;"><a style="color:white;"href="aboutUs.html">About Us</a></th>
+      </tr>
+        </table>
+        </div>
+<p class="footext" > <a style="color: white; " href="rasara_cv.html">Rasara Thrilanka</a></p>
+</footer>
+</body>
+</html>

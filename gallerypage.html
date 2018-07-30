@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<link href="css/desingLayout.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/NavigationStyle.css">
+	
+
+</head>
+<body>
+
+	<header>
+		 <!--Navigation Bar-->
+    <div class="logo">DOODIE'S PET SHOP</div>
+    <!--//Left Corner of Header-->
+    <nav class="active">
+        <ul>
+            <li><a href="Mainpage.html">HOME</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#" class="active">GALLERY</a></li>
+            <li><a href="#">QUIZ</a></li>
+            <li><a href="#">RATE US</a></li>
+            <li><a href="FormwithRating.html">ABOUT</a></li>
+
+        </ul>
+    </nav>
+    </div>
+	</header>
+    <div class="fullcontainer" style="background-image:url('images/dog-wallpaper-8.jpg')">
+    <article>
+		
+             
+             	 <div class="subcontainer">
+        <table style="width:100% height:100%"><tr><td>
+                        
+                     
+                            <img height="600px" width="auto" style="border:5px solid black" src="dog1.jpg" id="bigImage"/>
+                            <br>
+                            <div id="myDiv" onclick="changeImage(event)">
+                            <img class="imgstyle" width="110px" height="100px"src="dog1.jpg" onClick="clickevent1()" >
+                            <img class="imgstyle" width="110px" height="100px" src="dog2.jpg" onClick="clickevent2()"/>
+                            <img class="imgstyle" width="110px" height="100px" src="dog3.jpg" onClick="clickevent3()" />
+                            <img class="imgstyle" width="110px" height="100px"src="dog4.jpg" onClick="clickevent4()" />
+                            <img class="imgstyle" width="110px" height="100px" src="dog5.jpg" onClick="clickevent5()" />
+                            <img class="imgstyle" width="110px" height="100px" src="dog6.jpg" onClick="clickevent6()" />
+                            </div>
+                         </div>
+            </td>
+       
+     <td> 
+         <div class="paragraph" ><p  id="para">The Siberian Husky is a large size working dog breed that originated in Northeast Asia. The breed belongs to the Spitz genetic family. With proper training, they make great home pets and sled dogs.
+
+        
+            </p></div>
+            </td> 
+            </tr>
+        </table>
+               
+	
+	<footer>
+
+        <div class="sitemap">
+            <hr>
+        <table >
+            <tr>
+      <th  style="padding: 20px;" ><a style="color: white;"href="home.html">Home</a></th> 
+      <th  style="padding: 20px;"><a style="color: white;" href="gallerypage.html">Shop</a></th>
+      <th style="padding: 20px;"><a style="color: white; "href="comments.html">Gallery</a></th>
+      <th style="padding: 20px;"><a style="color: white; "href="products.html">Quiz</a></th>
+      <th style="padding: 20px;"><a style="color: white; "href="quiz.html">Rate Us</a></th>  
+       <th style="padding: 20px;"><a style="color:white;"href="aboutUs.html">About</a></th> 
+      </tr>   
+        </table>
+        </div>
+
+		<div class=dropdownContainer>
+            	 	<div class="dropdown">
+                		<button onclick="backgroundchangeFunction()" class="dropbtn">Background Color</button>
+                		<div id="mydropDown" class="dropDown-content">
+                			<input type="color" id="color">
+                			<input type="button" value="change" onclick="bgprocess()"/ >
+               			</div>
+           			</div>  
+           			<div class="dropdown">
+                		<button onclick="fontchangeFunction()" class="dropbtn">Font Color</button>
+                		<div id="myFontdown" class="dropDown-content">
+                			<input type="color" id="color1">
+                			<input type="button" value="change" onclick="fontprocess()"/ >
+               			</div>
+            		</div>
+            	</div>
+		</div>
+      <p class="footext" > <a style="color: black;" href="cv_new.html">Kalana Bandara Rathnayaka</a></p>
+
+  
+
+	</footer>
+
+    </article>
+             <script>
+        function clickevent1(){
+        document.getElementById("para").innerHTML = "The Siberian Husky is a large size working dog breed that originated in Northeast Asia. The breed belongs to the Spitz genetic family. With proper training, they make great home pets and sled dogs.";
+        }
+        function clickevent2(){
+        document.getElementById("para").innerHTML = "The Rottweiler is a breed of domestic dog, regarded as medium-to-large or large. The dogs were known in German as Rottweiler Metzgerhund, meaning Rottweil butchers' dogs, because their main use was to herd livestock and pull carts laden with butchered meat to market.This continued until the mid-19th century when railways replaced droving. Although still used to herd stock in many parts of the world, Rottweilers are now also used as search and rescue dogs, as guard dogs and police dogs.";
+        }
+        function clickevent3(){
+        document.getElementById("para").innerHTML = "The Golden Retriever is a large-sized breed of dog bred as gun dogs to retrieve shot waterfowl such as ducks and upland game birds during hunting and shooting parties, and were named 'retriever' because of their ability to retrieve shot game undamaged (soft mouth). Golden Retrievers have an instinctive love of water, and are easy to train to basic or advanced obedience standards. They are a long-coated breed, with a dense inner coat that provides them with adequate warmth in the outdoors, and an outer coat that lies flat against their bodies and repels water. Golden Retrievers are well suited to residency in suburban or country environments. Although they need substantial outdoor exercise, they should be housed in a fenced area because of their instinctual tendency to roam.They shed copiously, particularly at the change of seasons, and require fairly regular grooming.";
+        }
+        function clickevent4(){
+        document.getElementById("para").innerHTML = "The Labrador Retriever, or just Labrador, is a type of retriever-gun dog. The Labrador is one of the most popular breeds of dog in Canada, the United Kingdom and the United States.";
+        }
+        function clickevent5(){
+        document.getElementById("para").innerHTML = "The Boxer is a medium-sized, short-haired breed of dog, developed in Germany. The coat is smooth and tight-fitting; colors are fawn or brindled, with or without white markings, and white.";
+        }
+        function clickevent6(){
+        document.getElementById("para").innerHTML = " The German Shepherd is a breed of medium to large-sized working dog that originated in Germany. The breed's officially recognized name is German Shepherd Dog in the English language. The breed was once known as the Alsatian in Britain and Ireland.";
+        }
+        
+
+            function backgroundchangeFunction() {
+            document.getElementById("mydropDown").classList.toggle("show");
+            }
+           
+            function bgprocess(){
+            var color=document.getElementById("color").value;
+            document.body.style.backgroundColor=color;
+            }
+           
+             function fontchangeFunction() {
+            document.getElementById("myFontdown").classList.toggle("show");
+            }
+           
+            function fontprocess(){
+            var color=document.getElementById("color1").value;
+            document.getElementById("para").style.color=color;
+            }
+           
+
+           
+           
+        
+							     function changeImage(event){
+                                event=event || window.event;
+                                var targetElement= event.target|| event.srcElement;
+                                document.getElementById("bigImage").src=targetElement.getAttribute("src");
+                                }          
+
+           
+           
+        </script>
+
+		
+	
+
+</body>
+</html>

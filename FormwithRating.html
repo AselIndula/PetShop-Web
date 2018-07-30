@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>www.Doodie's.lk/Rate Us</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="images/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="images/x-icon">
+    <link rel="stylesheet" href="css/formWithRating.css">
+    <link rel="stylesheet" type="text/css" href="css/navigationStyle.css">      
+</head>
+<body>
+<header>        <!--//Navigation bar-->
+    <div class="logo">DOODIE'S PET SHOP</div>
+    <nav class="active">
+        <ul>
+            <div class="dogImgGIf" id="dogGIF"></div>
+            <li><a href="Mainpage.html">HOME</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">QUIZ</a></li>
+            <li><a href="FormwithRating.html" class="active">RATE</a></li>
+            <li><a href="#">ABOUT</a></li>
+
+        </ul>
+    </nav>
+    </div>
+</header>
+<!--Form Interface-->
+<div class="container">
+    <h2>It's now or never</h2>      <!--with the different headings giving topic before starting-->
+    <h1>Come on , Rate us!</h1>
+
+    <form action="" id="join-us" method="POST" onsubmit="return Validate()" name="vForm"> <!--Because i was not using php form tags action is nothing-->
+        <!--To use javascript using method-->
+        <div class="fields">
+          <span>
+           <input placeholder="Name" type="text" name="fName"/>
+              <div id="name_error" class="val_error"></div>
+        </span>
+            <br/>
+            <span>
+           <input placeholder="email" type="text" name="fEmail"/>
+        </span>
+            <br/>
+            <span>
+           <textarea placeholder="Comment" name="fComment"></textarea>
+        </span>
+            <br/>
+            <span>
+
+                <!--Rating-->
+        <fieldset class="rating">
+                <legend>Please rate:</legend>
+                <input type="radio" id="star5" name="rating" value="5"/><label for="star5"
+                                                                               title="Rocks!">5 stars</label>
+                <input type="radio" id="star4" name="rating" value="4"/><label for="star4"
+                                                                               title="Pretty good">4 stars</label>
+                <input type="radio" id="star3" name="rating" value="3"/><label for="star3" title="Meh">3 stars</label>
+                <input type="radio" id="star2" name="rating" value="2"/><label for="star2"
+                                                                               title="Kinda bad">2 stars</label>
+                <input type="radio" id="star1" name="rating" value="1"/><label for="star1"
+                                                                               title="Sucks big time">1 star</label>
+            </fieldset>
+                    <div id="rate_error" class="val_error"></div>
+        </span>
+
+        </div>
+        <div class="submit">
+            <input type="submit" value="Register" class="btn" name="register" onclick="myPopup">
+        </div>
+    </form>
+</div>
+<br><br><br><br><br><br><br><br><br>
+<div class="footer">
+    <div class="sitemap">
+        <table >
+            <tr>
+                <th  style="padding: 20px;" ><a style="color: white;"href="home.html">HOME</a></th>
+                <th  style="padding: 20px;"><a style="color: white;" href="gallerypage.html">SHOP</a></th>
+                <th style="padding: 20px;"><a style="color: white; "href="comments.html">GALLERY</a></th>
+                <th style="padding: 20px;"><a style="color: white; "href="products.html">QUIZ</a></th>
+                <th style="padding: 20px;"><a style="color: white; "href="quiz.html">RATE</a></th>
+                <th style="padding: 20px;"><a style="color:white;"href="aboutUs.html">ABOUT</a></th>
+            </tr>
+        </table>
+        <p class="footext" > <a style="color: white;" href="cv/nish_cv.html">Nishara Ramasinghe</a></p>
+        <br>
+        <hr>
+
+    </div>
+</div>
+<script type="text/javascript">
+    //getting input text objects
+    var userName = document.forms["vForm"]["fName"];
+    var email = document.forms["vForm"]["fEmail"];
+    var cmnt = document.forms["vForm"]["fComment"];
+    //getting all error displaying objects
+    var name_error = document.getElementById("name_error");
+    // var rate_error=document.getElementById("rate_error");
+
+    //    rate
+    //Setting All EVENT LISTNERS
+    userName.addEventListener("blur", nameVerify, true);
+    email.addEventListener("blur", emailVerify, true);
+    cmnt.addEventListener("blur", cmntVerify, true);
+
+    //    validation function & popup
+    function Validate() {
+        var star = '';
+        if (document.getElementById('star1').checked) {
+            star = "sucks big time";
+        }
+        if (document.getElementById('star2').checked) {
+            star = "Kinda bad";
+        }
+        if (document.getElementById('star3').checked) {
+            star = "meh";
+        }
+        if (document.getElementById('star4').checked) {
+            star = "Pretty Good";
+        }
+        if (document.getElementById('star5').checked) {
+            star = "Rock";
+        }
+
+        //userName vaidation
+        if (userName.value == "") {
+            userName.style.border = "1px solid red";
+            name_error.textContent = "Name is required";
+
+            userName.focus();
+            return false;
+        }
+        else if (!(document.getElementById('star5').checked || document.getElementById('star4').checked || document.getElementById('star3').checked
+            || document.getElementById('star2').checked || document.getElementById('star1').checked)) {
+            alert("Please rate us ")
+
+        } else {
+            alert("Dear, " + userName.value + " you have rated our site as " + star + " & " + cmnt.value + " you have commented.Thankyou for your response on our site.")
+        }
+
+        //Rating
+
+        //    event handler functions
+        function nameVerify() {
+            if (userName != "") {
+                userName.style.border = "1px solid #55EE66";
+                name_error.innerHTML = "";
+                return true;
+            }
+
+        }
+
+    }
+</script>
+
+</body>
+
+
+
+</html>

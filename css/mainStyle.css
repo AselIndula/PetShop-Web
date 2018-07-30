@@ -1,0 +1,206 @@
+body{
+    margin:0;
+    padding: 0;
+}
+#box1{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,100,.5)), url(../images/Dod2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-attachment: fixed;
+    background-position: center ;
+    background-position: center ;
+    display: table;
+
+}
+#box2{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/Dod6.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center ;
+    background-size: cover;
+    display: table;
+
+}
+#box3{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(100,0,0,.5)), url("../images/team.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-attachment: fixed;
+    background-position: center ;
+    display: table;
+
+}
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#topBtn:hover {
+    background-color: #555;
+}
+.welcome{
+    position:relative;
+    text-align: center;
+    font-size: 180px;
+    font-family: 'Handlee', cursive;
+    color: #fff;
+    top:60px;
+    margin-top:180px;
+}
+.welcome h1{
+    text-align: center;
+    align-content: center;
+    font-size: 150px;
+    margin: 20px;
+
+}
+.welcome h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+
+
+    align-content: flex-end;
+}
+
+slider{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    position: absolute;
+}
+slider>*{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    animation: slide 12s infinite;
+    overflow: hidden;
+}
+slide:nth-child(1){
+    left: 0%;
+    animation-delay: -1s;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,100,.5)),url(../images/Dodm.jpg);
+    background-size: cover;
+    background-position: center;
+}
+slide:nth-child(2){
+    animation-delay: 2s;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(100,0,0,.5)),url(../images/Cadf.jpg);
+    background-size: cover;
+    background-position: center;
+}
+slide:nth-child(3){
+    left: 0%;
+    animation-delay: 5s;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(../images/Cad7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+slide:nth-child(4){
+    left: 0%;
+    animation-delay: 8s;
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(100,0,0,.5)), url(../images/Dod3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+slide p{
+    font-family: "Copperplate Gothic Bold";
+    font-size: 70px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 340px;
+    color:#FFFFFF;
+}
+
+@keyframes slide {
+    0%{left: 100%; width: 100%;}
+    5%{left: 0%}
+    25%{left: 0%}
+    30%{left: -100%;width: 100%}
+    30.0001%{left: -100%;width: 0%}
+    100%{left: 100%;width:0%}
+}
+/*Get Started button design*/
+.btn{
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin: 5px;
+    padding: 7px 10px;
+    text-decoration: none;
+    border: 1px solid #fff ;
+    background: #FFFFFF;
+    color: #000000;
+}
+.btn:hover{
+    background: rgba(0,0,0,.3);
+    color: #eeaa00;
+    tansition:.4s;
+}
+
+
+/*3rd page*/
+top{
+    font-size:150px;
+    font-family: 'Pacifico', cursive;
+    text-align:center;
+}
+gallery {
+    margin: 80px;
+    border:1px solid grey;
+    box-shadow: 0 0 13px #455444;
+    float: left;
+    width: 180px;
+    border-radius:50%;
+
+}
+
+gallery:hover {
+    border: 1px solid black;
+    border-width:3px;
+}
+
+gallery img {
+    width: 100%;
+    height: auto;
+    border-radius:50%;
+
+}
+desc {
+    font-size:14pt;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-weight:bold;
+}
+.sitemap {
+    margin-left: 100px;
+    margin-top: 250px;
+    float: center;
+    margin-bottom: 0px;
+}
+
+
+
+

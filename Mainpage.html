@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <!--Title & its icon-->
+    <title>www.Doodie's.lk/Main Page</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="Images/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="Images/x-icon">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Cinzel|Fredoka+One|Glegoo|Handlee|Orbitron|Permanent+Marker|Righteous"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/mainStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/navigationStyle.css">
+    <link href="css/teamstyles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<header>
+    <div class="logo">DOODIE'S PET SHOP</div>
+    <nav class="active">
+        <ul>
+            <div class="dogImgGIf" id="dogGIF"></div>
+            <li><a href="Mainpage.html" CLASS="active">HOME</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="quiz.html">QUIZ</a></li>
+            <li><a href="FormwithRating.html">RATE</a></li>
+            <li><a href="team.html">ABOUT</a></li>
+
+        </ul>
+    </nav>
+</header>
+<!--button to scroll up-->
+<button onclick="upFunction()" id="topBtn" title="Go to top">Top</button>
+<!--menu bar scroll with paralelX effect-->
+<div id="box1">
+    <div class="welcome">
+        <h1>Doodie's Pet Shop</h1>
+        <a href="shop.html" class="btn">Shop now</a>
+        <h3>Powered by Delfiny.lk</h3>
+
+    </div>
+</div>
+<div id="box2">
+    <!--Image slider-->
+    <div class="sliderztext">
+    <slider>
+        <slide><p>HAPPINESS IS WARM PUPPY</p></slide>
+        <slide><p>EVEN CATS GROW LONELY AND ANXIOUS</p></slide>
+        <slide><p>DOGS NEVER BITE US JUST HUMANS.</p></slide>
+        <slide><p>DOODIE'S PET SHOP</p></slide>
+
+    </slider>
+    </div>
+    <!--<div class="textaboveImage">
+        <p>Hi this is our site</p>
+    </div>-->
+</div>
+<div id="box3">
+    <div class="top">Doodie's</div>
+
+    <div style="margin-left:200px">
+        <div class="gallery" style="margin-left:40px">
+            <a target="_blank" href="images/member_1.jpg">
+                <img src="images/member_1.jpg" alt="member1" width="600" height="400"
+                     onmouseover="document.getElementById('desc_1').style.display = 'block'; document.getElementById('desc_2').style.display = 'none'; document.getElementById('desc_3').style.display = 'none'; document.getElementById('desc_4').style.display = 'none';">
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="images/member_2.jpg">
+                <img src="images/member_2.jpg" alt="member2" width="600" height="400"
+                     onmouseover="document.getElementById('desc_2').style.display = 'block'; document.getElementById('desc_1').style.display = 'none'; document.getElementById('desc_3').style.display = 'none'; document.getElementById('desc_4').style.display = 'none';">
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="images/member_3.jpg">
+                <img src="images/member_3.jpg" alt="member3" width="600" height="400"
+                     onmouseover="document.getElementById('desc_3').style.display = 'block'; document.getElementById('desc_1').style.display = 'none'; document.getElementById('desc_2').style.display = 'none'; document.getElementById('desc_4').style.display = 'none';">
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="images/member_4.jpg">
+                <img src="images/member_4.jpg" alt="member4" width="600" height="400"
+                     onmouseover="document.getElementById('desc_4').style.display = 'block'; document.getElementById('desc_1').style.display = 'none'; document.getElementById('desc_2').style.display = 'none'; document.getElementById('desc_3').style.display = 'none';">
+            </a>
+        </div>
+
+    </div>
+
+    <div id="desc_1" class="desc" style="clear: both; display: none;">Asel Siriwardana, Student 1</div>
+    <div id="desc_2" class="desc" style="clear: both; display: none;">Nishara Ramasinghe, Student 2</div>
+    <div id="desc_3" class="desc" style="clear: both; display: none;">Rasara Thrilanka, Student 3</div>
+    <div id="desc_4" class="desc" style="clear: both; display: none;">Kalana Bandara, Student 4</div>
+<!-site map--->
+    <div class="sitemap">
+        <hr>
+        <table >
+            <tr>
+                <th  style="padding: 20px;" ><a style="color: white;"href="home.html">HOME</a></th>
+                <th  style="padding: 20px;"><a style="color: white;" href="gallerypage.html">SHOP</a></th>
+                <th style="padding: 20px;"><a style="color: white; "href="comments.html">GALLERY</a></th>
+                <th style="padding: 20px;"><a style="color: white; "href="products.html">QUIZ</a></th>
+                <th style="padding: 20px;"><a style="color: white; "href="quiz.html">RATE</a></th>
+                <th style="padding: 20px;"><a style="color:white;"href="aboutUs.html">ABOUT</a></th>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+
+<!--When user scroll down 18px from the document scroll up button will show-->
+<script>
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 18 || document.documentElement.scrollTop > 18) {
+            document.getElementById("topBtn").style.display = "block";
+        } else {
+            document.getElementById("topBtn").style.display = "none";
+        }
+    }
+
+    //        scroll to top after user clicks the button
+    function upFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+
+</body>
+</html>

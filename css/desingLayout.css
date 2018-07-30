@@ -1,0 +1,117 @@
+.paragraph{
+    float: right;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    font-size: 105%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: justify;
+    color: white;
+}
+.imgstyle{
+    height: :90px;
+    width: 100px;
+    border: 3px solid #bcd5d1;   
+}
+
+.fullcontainer {
+    	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom-width: 10px;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.subcontainer{
+	padding-left: 50px;
+	padding-top: 110px;
+	padding-right: 110px;
+	padding-bottom: 110px;
+
+}
+.h1{
+	float: center;
+}
+
+.logo{
+	float:left; 
+	margin-left:10px;
+}
+
+.title {
+	font-weight: bold;
+	font-style: normal;
+	font-family: "Source Sans Pro";
+	text-align: center;
+	color: #FFFFFF;
+	letter-spacing: 2px;
+}
+.dropdownContainer{
+	padding-left: 110px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	float: right;
+}
+
+.dropbtn {
+    background-color:#C8AEAE;
+    color: white;
+    padding: 14px;
+    font-size: 13px;
+    border: inset;
+    cursor: pointer;
+    border-radius: 14px;
+    margin-right: 0px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color:rgba(0,0,0,0.3);
+}
+
+.dropdown {
+   
+   color: black;
+    display: inline-block;
+    padding: 10px;
+    float: center;
+    background-color: unset;
+    margin: 15px;
+    border-radius:15px;
+}
+
+.dropDown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 70px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.show {display:block;}
+
+.sitemap{
+	margin-left: 100px;
+	margin-top: 250px;
+	float: center;
+	margin-bottom: 0px;
+
+}
+.footext {
+	float:none;
+	margin-right:auto;
+	margin-left:auto;
+	text-align:center;
+	font-size: 20px;
+    
+
+}
+
+
