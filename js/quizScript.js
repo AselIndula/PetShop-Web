@@ -40,6 +40,7 @@ var timer = setInterval(function() {
         {'Q':'Which dog breed has a black tongue?', 'A':3,'C':['Husky','Labrador','Chow chow']},
         {'Q':'What breed of dog is the smallest used in hunting?', 'A':2,'C':['Chihuahua','Miniature Dachshund','Toy poodle']},
         {'Q':'What is the most popular breed of dog, according to the American Kennel Club’s registrations?', 'A':2,'C':['Golden retriever','Labrador','German Shepherd']},
+        {'Q':'What is the most dangerous dog breed in the world?', 'A':2,'C':['American Pit Bull Terrier','Rottweiler','German Shepherd']},
     ];
  
     $(document.body).on('click',"label.element-animation",function (e) {
